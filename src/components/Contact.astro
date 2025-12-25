@@ -6,13 +6,15 @@
         <p class="text-xl text-gray-400">Request a demo to see how we can transform your workflow.</p>
       </div>
 
-      <form class="space-y-6">
+      <form id="contact-form" action="/api/subscribe" method="POST" class="space-y-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="space-y-2">
             <label for="name" class="text-sm font-bold text-gray-500 uppercase tracking-wider">Name</label>
             <input 
               type="text" 
               id="name" 
+              name="name"
+              required
               class="w-full bg-black border border-white/10 px-4 py-3 text-white focus:border-adikal-green focus:outline-none transition-colors placeholder-gray-700"
               placeholder="J. Doe"
             />
@@ -22,6 +24,8 @@
             <input 
               type="email" 
               id="email" 
+              name="email"
+              required
               class="w-full bg-black border border-white/10 px-4 py-3 text-white focus:border-adikal-green focus:outline-none transition-colors placeholder-gray-700"
               placeholder="j@company.com"
             />
@@ -32,13 +36,14 @@
           <label for="message" class="text-sm font-bold text-gray-500 uppercase tracking-wider">Message</label>
           <textarea 
             id="message" 
+            name="message"
             rows="4"
             class="w-full bg-black border border-white/10 px-4 py-3 text-white focus:border-adikal-green focus:outline-none transition-colors placeholder-gray-700"
             placeholder="Tell us about your infrastructure..."
           ></textarea>
         </div>
 
-        <button type="button" class="w-full bg-white text-black font-bold py-4 hover:bg-adikal-green transition-colors">
+        <button type="submit" id="submit-btn" class="w-full bg-white text-black font-bold py-4 hover:bg-adikal-green transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
           Send Message
         </button>
       </form>
