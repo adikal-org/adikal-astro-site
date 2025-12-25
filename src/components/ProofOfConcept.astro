@@ -1,0 +1,56 @@
+---
+import { Github, ExternalLink } from 'lucide-astro';
+---
+
+<section id="proof-of-concept" class="py-20 border-t border-white/5 bg-white/[0.02]">
+  <div class="container mx-auto px-4">
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-white mb-4">
+        <span class="text-adikal-green">02.</span> Proof of Concept
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl">See the efficiency of our architecture in action.</p>
+    </div>
+
+    <div class="max-w-4xl">
+      <div class="border border-white/10 bg-black overflow-hidden">
+        <div class="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-white/5">
+          <div class="w-3 h-3 rounded-full bg-red-500"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          <div class="ml-4 text-xs text-gray-500 font-mono">adikal-poc — bash</div>
+        </div>
+        <div class="p-8 font-mono text-sm md:text-base">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+            <div class="flex-1 space-y-4">
+              <div class="text-adikal-green font-bold text-xl mb-2">k3s-hcloud</div>
+              <p class="text-gray-300">
+                A high-availability Kubernetes cluster on Hetzner Cloud for <span class="text-white font-bold">$20/month</span>.
+              </p>
+              <ul class="space-y-2 text-gray-500 mt-4">
+                <li class="flex items-center gap-2">
+                  <span class="text-adikal-green">✓</span> Production ready K3s
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-adikal-green">✓</span> Hetzner Cloud Controller Manager
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-adikal-green">✓</span> CSI Driver for volumes
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-adikal-green">✓</span> System Upgrade Controller
+                </li>
+              </ul>
+            </div>
+            <div class="mt-8 md:mt-0">
+               <a href="https://github.com/adikal-org/k3s-hcloud" target="_blank" class="inline-flex items-center gap-2 bg-white text-black font-bold py-3 px-6 hover:bg-adikal-green transition-colors">
+                <Github size={20} />
+                <span>View Source</span>
+                <ExternalLink size={16} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

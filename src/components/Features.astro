@@ -1,0 +1,49 @@
+---
+import { Cloud, Database, Activity } from 'lucide-astro';
+---
+
+<section id="features" class="py-20 border-t border-white/5">
+  <div class="container mx-auto px-4">
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-white mb-4">
+        <span class="text-adikal-green">01.</span> Features
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl">Everything you need to ship faster, without the infrastructure headaches.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="group p-8 bg-white/5 border border-white/10 hover:border-adikal-green/50 transition-colors">
+        <div class="mb-6 text-adikal-green">
+          <Cloud size={48} strokeWidth={1.5} />
+        </div>
+        <h3 class="text-xl font-bold text-white mb-4">Cloud Agnostic</h3>
+        <p class="text-gray-400 leading-relaxed mb-6">
+          Deploy applications to any major provider. AWS, Google Cloud, Azure, Digital Ocean, or Hetzner - we support them all with a unified interface.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="group p-8 bg-white/5 border border-white/10 hover:border-adikal-green/50 transition-colors">
+        <div class="mb-6 text-adikal-green">
+          <Database size={48} strokeWidth={1.5} />
+        </div>
+        <h3 class="text-xl font-bold text-white mb-4">Managed Data</h3>
+        <p class="text-gray-400 leading-relaxed mb-6">
+          Seamlessly manage databases with RDS, Cloud SQL, or CNPG. Built-in Barman backups ensure your data is always safe and recoverable.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="group p-8 bg-white/5 border border-white/10 hover:border-adikal-green/50 transition-colors">
+        <div class="mb-6 text-adikal-green">
+          <Activity size={48} strokeWidth={1.5} />
+        </div>
+        <h3 class="text-xl font-bold text-white mb-4">Observability</h3>
+        <p class="text-gray-400 leading-relaxed mb-6">
+          Full visibility into your infrastructure. Pre-configured CI/CD pipelines and Grafana dashboards give you deep insights from day one.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

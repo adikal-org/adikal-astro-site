@@ -1,0 +1,84 @@
+---
+import { Check, X } from 'lucide-astro';
+---
+
+<section id="pricing" class="py-20 border-t border-white/5">
+  <div class="container mx-auto px-4">
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-white mb-4">
+        <span class="text-adikal-green">03.</span> Engagement Models
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl">Transparent pricing for growing companies.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <!-- Traditional Option -->
+      <div class="p-8 border border-white/10 bg-white/5 opacity-50 hover:opacity-100 transition-opacity">
+        <h3 class="text-xl font-bold text-white mb-2">In-House Engineer</h3>
+        <p class="text-gray-500 mb-8 h-12">The traditional, expensive hiring route.</p>
+        
+        <div class="mb-8">
+          <span class="text-4xl font-bold text-white">$150k+</span>
+          <span class="text-gray-500">/year</span>
+        </div>
+
+        <ul class="space-y-4 mb-8 text-gray-400">
+          <li class="flex items-center gap-3">
+            <X size={20} class="text-red-500" />
+            <span>Full-time salary & overhead</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <X size={20} class="text-red-500" />
+            <span>Equity & benefits cost</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <X size={20} class="text-red-500" />
+            <span>Hiring & onboarding time</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <X size={20} class="text-red-500" />
+            <span>Single point of failure</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Adikal Option -->
+      <div class="p-8 border-2 border-adikal-green bg-black relative">
+        <div class="absolute top-0 right-0 bg-adikal-green text-black text-xs font-bold px-3 py-1 uppercase">
+          Recommended
+        </div>
+        
+        <h3 class="text-xl font-bold text-white mb-2">Adikal Platform</h3>
+        <p class="text-gray-400 mb-8 h-12">Dedicated expertise, fraction of the cost.</p>
+        
+        <div class="mb-8">
+          <span class="text-4xl font-bold text-adikal-green">$5,000</span>
+          <span class="text-gray-500">/month</span>
+        </div>
+
+        <ul class="space-y-4 mb-8 text-gray-300">
+          <li class="flex items-center gap-3">
+            <Check size={20} class="text-adikal-green" />
+            <span>Cloud agnostic platform setup</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <Check size={20} class="text-adikal-green" />
+            <span>On-demand expert support</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <Check size={20} class="text-adikal-green" />
+            <span>Continuous cost optimization</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <Check size={20} class="text-adikal-green" />
+            <span>Scalable & reliable architecture</span>
+          </li>
+        </ul>
+
+        <a href="#contact" class="block w-full bg-adikal-green text-black font-bold py-4 text-center hover:bg-white transition-colors">
+          Start Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
