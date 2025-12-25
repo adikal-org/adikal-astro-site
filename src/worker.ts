@@ -45,11 +45,12 @@ async function handleSubscribe(request: Request, env: Env): Promise<Response> {
 				email: email,
 				attributes: {
 					FIRSTNAME: name,
+                    MESSAGE: message,
                     // Note: Ensure your Brevo list has a 'MESSAGE' attribute if you want to save it
                     // Or add it to a specific transactional email trigger
 				},
 				updateEnabled: true,
-				listIds: [2],
+				listIds: [6],
 			}),
 		});
 
