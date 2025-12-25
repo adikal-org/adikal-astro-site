@@ -1,84 +1,90 @@
 ---
-import { Check, X } from 'lucide-astro';
+
 ---
 
 <section id="pricing" class="py-20 border-t border-white/5">
   <div class="max-w-5xl mx-auto px-4">
     <div class="mb-16">
       <h2 class="text-3xl font-bold text-white mb-4">
-        <span class="text-adikal-green">03.</span> Engagement Models
+        <span class="text-adikal-green">03.</span> The Adikal Advantage
       </h2>
-      <p class="text-xl text-gray-400 max-w-2xl">Transparent pricing for growing companies.</p>
+      <p class="text-xl text-gray-400 max-w-2xl">Don't just hire. Partner with experts.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      <!-- Traditional Option -->
-      <div class="p-8 border border-white/10 bg-white/5 opacity-50 hover:opacity-100 transition-opacity">
-        <h3 class="text-xl font-bold text-white mb-2">In-House Engineer</h3>
-        <p class="text-gray-500 mb-8 h-12">The traditional, expensive hiring route.</p>
-        
-        <div class="mb-8">
-          <span class="text-4xl font-bold text-white">$150k+</span>
-          <span class="text-gray-500">/year</span>
+    <!-- Comparison Container -->
+    <div class="border border-white/10 bg-white/5 overflow-hidden">
+      <!-- Header Row -->
+      <div class="grid grid-cols-1 md:grid-cols-2 border-b border-white/10">
+        <div class="p-6 md:p-8 border-b md:border-b-0 md:border-r border-white/10">
+          <h3 class="text-xl font-bold text-gray-400">Traditional Hiring</h3>
+          <p class="text-sm text-gray-500 mt-2">High cost, high management overhead</p>
         </div>
-
-        <ul class="space-y-4 mb-8 text-gray-400">
-          <li class="flex items-center gap-3">
-            <X size={20} class="text-red-500" />
-            <span>Full-time salary & overhead</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <X size={20} class="text-red-500" />
-            <span>Equity & benefits cost</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <X size={20} class="text-red-500" />
-            <span>Hiring & onboarding time</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <X size={20} class="text-red-500" />
-            <span>Single point of failure</span>
-          </li>
-        </ul>
+        <div class="p-6 md:p-8 bg-white/5 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-20 h-20 bg-adikal-green/10 rounded-bl-full -mr-10 -mt-10"></div>
+          <h3 class="text-xl font-bold text-white relative z-10">The Adikal Model</h3>
+          <p class="text-sm text-adikal-green mt-2 relative z-10">Streamlined, expert-led, cost-effective</p>
+        </div>
       </div>
 
-      <!-- Adikal Option -->
-      <div class="p-8 border-2 border-adikal-green bg-black relative">
-        <div class="absolute top-0 right-0 bg-adikal-green text-black text-xs font-bold px-3 py-1 uppercase">
-          Recommended
-        </div>
-        
-        <h3 class="text-xl font-bold text-white mb-2">Adikal Platform</h3>
-        <p class="text-gray-400 mb-8 h-12">Dedicated expertise, fraction of the cost.</p>
-        
-        <div class="mb-8">
-          <span class="text-4xl font-bold text-adikal-green">$5,000</span>
-          <span class="text-gray-500">/month</span>
+      <!-- Comparison Points -->
+      <div class="divide-y divide-white/10">
+        <!-- Cost -->
+        <div class="grid grid-cols-1 md:grid-cols-2">
+           <div class="p-6 md:px-8 md:py-6 md:border-r border-white/10 flex flex-col justify-center">
+             <span class="text-red-400 font-mono text-lg mb-1">$150k+ / year</span>
+             <span class="text-gray-500 text-sm">Salary + Benefits + Equity</span>
+           </div>
+           <div class="p-6 md:px-8 md:py-6 bg-white/5 flex flex-col justify-center">
+             <span class="text-adikal-green font-mono text-lg mb-1">$60k / year</span>
+             <span class="text-gray-400 text-sm">Flat monthly fee ($5k/mo)</span>
+           </div>
         </div>
 
-        <ul class="space-y-4 mb-8 text-gray-300">
-          <li class="flex items-center gap-3">
-            <Check size={20} class="text-adikal-green" />
-            <span>Cloud agnostic platform setup</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <Check size={20} class="text-adikal-green" />
-            <span>On-demand expert support</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <Check size={20} class="text-adikal-green" />
-            <span>Continuous cost optimization</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <Check size={20} class="text-adikal-green" />
-            <span>Scalable & reliable architecture</span>
-          </li>
-        </ul>
+        <!-- Expertise -->
+        <div class="grid grid-cols-1 md:grid-cols-2">
+           <div class="p-6 md:px-8 md:py-6 md:border-r border-white/10">
+             <h4 class="text-white font-medium mb-1">Single Point of Failure</h4>
+             <p class="text-gray-500 text-sm">Dependent on one person's knowledge and availability.</p>
+           </div>
+           <div class="p-6 md:px-8 md:py-6 bg-white/5">
+             <h4 class="text-white font-medium mb-1">Collective Expertise</h4>
+             <p class="text-gray-400 text-sm">Access to a team of seniors with diverse cloud experience.</p>
+           </div>
+        </div>
 
-        <a href="#contact" class="block w-full bg-adikal-green text-black font-bold py-4 text-center hover:bg-white transition-colors">
-          Start Now
+        <!-- Speed -->
+        <div class="grid grid-cols-1 md:grid-cols-2">
+           <div class="p-6 md:px-8 md:py-6 md:border-r border-white/10">
+             <h4 class="text-white font-medium mb-1">Slow Onboarding</h4>
+             <p class="text-gray-500 text-sm">Months to recruit, hire, and ramp up.</p>
+           </div>
+           <div class="p-6 md:px-8 md:py-6 bg-white/5">
+             <h4 class="text-white font-medium mb-1">Immediate Impact</h4>
+             <p class="text-gray-400 text-sm">Start executing on day one with established best practices.</p>
+           </div>
+        </div>
+        
+         <!-- Management -->
+        <div class="grid grid-cols-1 md:grid-cols-2">
+           <div class="p-6 md:px-8 md:py-6 md:border-r border-white/10">
+             <h4 class="text-white font-medium mb-1">Management Burden</h4>
+             <p class="text-gray-500 text-sm">Requires engineering management and career pathing.</p>
+           </div>
+           <div class="p-6 md:px-8 md:py-6 bg-white/5">
+             <h4 class="text-white font-medium mb-1">Zero Overhead</h4>
+             <p class="text-gray-400 text-sm">We manage the output and quality. You focus on product.</p>
+           </div>
+        </div>
+      </div>
+      
+       <!-- Call to Action Footer within the comparison -->
+      <div class="p-8 bg-white/5 border-t border-white/10 text-center">
+        <p class="text-white mb-6">Ready to upgrade your engineering capability?</p>
+        <a href="#contact" class="inline-block bg-adikal-green text-black font-bold py-3 px-8 hover:bg-white transition-colors">
+          Start Engagement
         </a>
       </div>
+
     </div>
   </div>
 </section>
